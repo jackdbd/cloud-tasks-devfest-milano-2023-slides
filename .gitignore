@@ -1,0 +1,14 @@
+# build artifacts
+dist/
+
+#dependencies
+node_modules/
+
+# environment variables
+.envrc
+
+# build directory that will be deployed
+dist/
+
+# HTML file that contains the single page app (slidev recreates this page every time)
+index.html

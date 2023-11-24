@@ -14,9 +14,9 @@ Idempotency:
 
 We can implement an idempotent task handler using:
 
-- a constraint from our business logic.
-- ETags (only for existing resources, so only for PATCH requests, not for POST requests).
-- an idempotency key (e.g. [Stripe API](https://stripe.com/docs/api/idempotent_requests)).
+- a <span class="color:accent">constraint</span> from our business logic.
+- <span class="color:accent">ETags</span> (only for existing resources, so only for PATCH requests, not for POST requests).
+- an <span class="color:accent">idempotency key</span> (e.g. [Stripe API](https://stripe.com/docs/api/idempotent_requests)).
 
 Reference:
 

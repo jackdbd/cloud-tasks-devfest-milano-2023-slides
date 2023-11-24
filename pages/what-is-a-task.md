@@ -6,9 +6,9 @@ layout: two-cols
 
 <Transform scale="0.85">
 
-Object (e.g. Plain Old Javascript Object) that represents a **piece of work** to be performed by **some service**.
+Object (e.g. Plain Old Javascript Object) that represents a <span class="color:accent">piece of work</span> to be performed by **some service**.
 
-**Explicit invocation**: who creates the task retains full **control of execution**.
+<b><span class="color:accent">Explicit invocation:</span></b> who creates the task retains full **control of execution**.
 
 Task configuration for an HTTP task:
 

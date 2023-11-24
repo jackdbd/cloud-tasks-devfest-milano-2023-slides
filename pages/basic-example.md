@@ -7,10 +7,10 @@ layout: center
 ```mermaid {theme: 'default', scale: 0.8}
 sequenceDiagram
     autonumber
-    participant TG as Task Generator
+    participant TC as Task Creator
     participant CT as Cloud Tasks
     participant Target
-    TG->>CT: create task
+    TC->>CT: create task
     Note right of CT: A task can be scheduled<br/>up to 30 days in the future
     loop Keep dispatching task until
         CT->>Target: - 2xx from Target<br />- max attempts<br />- timeout<br />- task TTL

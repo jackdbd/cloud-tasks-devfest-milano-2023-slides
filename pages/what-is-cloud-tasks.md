@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: center
 ---
 
 # What is Cloud Tasks?
 
-<Transform scale="0.85">
+<Transform scale="1">
 
-GCP's **fully managed** service to manage queues of **background tasks**.
+GCP's <span class="color:accent">fully managed</span> service to manage <span class="color:accent">queues</span> of <span class="color:accent">background tasks</span>.
 
 Background task implies that the user or requester **does not wait** for the task to finish.
 
@@ -16,7 +16,7 @@ Background task implies that the user or requester **does not wait** for the tas
 @startuml
 left to right direction
 
-package "App" {
+package "Task creator" {
   [Task]
 }
 
@@ -28,7 +28,7 @@ frame "Target" {
     [HTTP Handler]
 }
 
-[App] --> [Cloud Tasks] : sends task to
+[Task creator] --> [Cloud Tasks] : sends task to
 [Cloud Tasks] ---> [Target] : HTTP
 [HTTP Handler] ..> [Cloud Tasks] : 2xx
 
@@ -40,13 +40,6 @@ end note
 
 @enduml
 ```
-
-Use cases:
-
-- Delegating potentially slow operations to a dedicated service
-- Preserving requests in the context of a service outage
-- Managing third-party API call rates (i.e. avoid HTTP 429 Too Many Requests) and handling retries
-- Smoothing traffic spikes out by removing non-user-facing tasks from the main user flow
 
 </Transform>
 

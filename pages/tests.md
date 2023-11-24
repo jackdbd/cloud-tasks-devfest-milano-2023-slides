@@ -12,7 +12,7 @@ No official emulator. There is <Anchor href="https://github.com/aertje/cloud-tas
 
 ## Integration tests
 
-Test the integration between Cloud Tasks and your components (task generator and task handler).
+Test the integration between Cloud Tasks and your components (task creator and task handler).
 
 Since Cloud Tasks is not a service under our control, these tests are **cross-system** integration tests and [someone might argue they are not that useful](https://www.draconianoverlord.com/2017/08/23/the-futility-of-cross-system-integration-testing.html/).
 
@@ -24,7 +24,7 @@ Test the system as a single piece, as an end user would use it.
 
 Stress test your system with an HTTP load generator like <Anchor href="https://github.com/locustio/locust" text="Locust" />, <Anchor href="https://github.com/artilleryio/artillery" text="artillery" /> or <Anchor href="https://github.com/mcollina/autocannon" text="autocannon" />.
 
-Simulate outages of 3rd paty services your system depends on (e.g. Stripe is down).
+Simulate outages/issues of 3rd paty services (e.g. SendGrid is down, Stripe takes too long to respond).
 
 </Transform>
 

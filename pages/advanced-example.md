@@ -8,12 +8,12 @@ layout: center
 sequenceDiagram
     autonumber
     actor U as User
-    participant TG as Task Generator
+    participant TC as Task Creator
     participant CT as Cloud Tasks
     participant Target
     participant DB as Firestore
-    U->>TG: perform action
-    TG->>CT: create task
+    U->>TC: perform action
+    TC->>CT: create task
     loop Keep dispatching task until
         CT->>Target: 2xx / max attempts / timeout / task TTL
     end

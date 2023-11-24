@@ -6,22 +6,22 @@ layout: default
 
 <Transform scale="0.8">
 
-## Task generator
+## Task creator
 
 The service account attached to the service that creates tasks and sends them to Cloud Storage must have the IAM roles **Task Enqueuer** and **Service Account User**:
 
-- `roles/cloudtasks.enqueuer`
-- `roles/iam.serviceAccountUser`
+- <code class="inline-code">roles/cloudtasks.enqueuer</code>
+- <code class="inline-code">roles/iam.serviceAccountUser</code>
 
 ## Cloud Tasks
 
 The service account for Cloud Tasks is managed by Google. Double check that this service account exists and that it has the IAM role **Cloud Tasks Service Agent**:
 
-`service-<project_number>@gcp-sa-cloudtasks.iam.gserviceaccount.com`
+<code class="inline-code">service-<project_number>@gcp-sa-cloudtasks.iam.gserviceaccount.com</code>
 
 ## Task handler
 
-The service account attached to the service that processes tasks must have the necessary IAM permissions to do its job. E.g. For a Cloud Run service that requires read/write access to Firestore we can assign the IAM roles `roles/run.invoker` and `roles/datastore.user`.
+The service account attached to the service that processes tasks must have the necessary IAM permissions to do its job. E.g. For a Cloud Run service that requires read/write access to Firestore we can assign the IAM role <code class="inline-code">roles/datastore.user</code>.
 
 </Transform>
 

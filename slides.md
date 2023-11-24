@@ -9,6 +9,7 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 css: unocss
 defaults:
   layout: cover
+download: 'https://raw.githubusercontent.com/jackdbd/cloud-tasks-devfest-milano-2023-slides/main/assets/presentation.pdf'
 # whether to persist drawings in exports and build
 drawings:
   persist: false
@@ -19,10 +20,9 @@ htmlAttrs:
   lang: 'en'
 # some information about the slides, markdown enabled
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Cloud Tasks: best practices and lessons learned
 
-  Learn more at [Sli.dev](https://sli.dev)
+  Presentation I gave at [DevFest GDG Cloud Milano 2023](https://gdg.community.dev/events/details/google-gdg-cloud-milano-presents-devfest-gdg-cloud-milano-2023/)
 # show line numbers in code blocks
 lineNumbers: false
 # https://sli.dev/guide/presenter-mode.html
@@ -51,6 +51,18 @@ src: ./pages/queues-in-theory-vs-in-cloud-tasks.md
 ---
 
 ---
+src: ./pages/use-cases-intro.md
+---
+
+---
+src: ./pages/use-cases.md
+---
+
+---
+src: ./pages/how-to-use-cloud-tasks-intro.md
+---
+
+---
 src: ./pages/creating-a-queue.md
 ---
 
@@ -61,6 +73,10 @@ src: ./pages/what-is-a-task.md
 ---
 src: ./pages/token-bucket-algorithm.md
 hide: true
+---
+
+---
+src: ./pages/iam.md
 ---
 
 ---
@@ -84,7 +100,40 @@ src: ./pages/notifications-serverless-friendly.md
 ---
 
 ---
-src: ./pages/iam.md
+src: ./pages/diagrams.md
+hide: true
+---
+
+---
+src: ./pages/best-practices-intro.md
+---
+
+---
+src: ./pages/make-your-tasks-easy-to-identify.md
+---
+
+---
+src: ./pages/idempotent-task-handlers.md
+---
+
+---
+src: ./pages/security.md
+---
+
+---
+src: ./pages/tests.md
+---
+
+---
+src: ./pages/monitoring.md
+---
+
+---
+src: ./pages/alerting.md
+---
+
+---
+src: ./pages/alternatives.md
 ---
 
 ---
@@ -100,47 +149,19 @@ src: ./pages/vs-cloud-scheduler.md
 ---
 
 ---
-src: ./pages/diagrams.md
-hide: true
----
-
----
-src: ./pages/make-your-tasks-easy-to-identify.md
----
-
----
-src: ./pages/idempotent-task-handlers.md
----
-
----
-src: ./pages/tests.md
----
-
----
-src: ./pages/metrics.md
----
-
----
-src: ./pages/components.md
-hide: true
----
-
----
 class: px-20
 src: ./pages/themes.md
 hide: true
 ---
 
 ---
-src: ./pages/demo.md
----
-
----
 class: text-center
-layout: center
+layout: fact
 ---
 
-# Thanks!
+<h1 class="">Thanks<span class="color:accent">!</span></h1>
+
+<Anchor href="https://cloud-tasks-devfest-milano-2023-slides.vercel.app/" text ="cloud-tasks-devfest-milano-2023-slides.vercel.app" />
 
 <!--
 Cloud Tasks is a managed service that allows developers to create distributed task queues that can execute background jobs asynchronously.

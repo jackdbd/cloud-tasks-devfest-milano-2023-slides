@@ -12,8 +12,8 @@ Configuration for a Cloud Task queue:
 - [Rate limits](https://cloud.google.com/tasks/docs/reference/rest/v2beta3/projects.locations.queues#ratelimits)
 - [Retries](https://cloud.google.com/tasks/docs/reference/rest/v2beta3/projects.locations.queues#RetryConfig)
 - [Logging](https://cloud.google.com/tasks/docs/reference/rest/v2beta3/projects.locations.queues#stackdriverloggingconfig)
-- `taskTtl`: maximum amount of time that a task is retained in this queue (from [v2beta3](https://cloud.google.com/tasks/docs/release-notes#January_14_2021))
-- `tombstoneTtl`: amount of time the task tombstone is retained after a task is deleted or executed. The tombstone is used in task de-duplication (from [v2beta3](https://cloud.google.com/tasks/docs/release-notes#January_14_2021))
+- <code class="inline-code">taskTtl</code>: maximum amount of time that a task is retained in this queue (from [v2beta3](https://cloud.google.com/tasks/docs/release-notes#January_14_2021))
+- <code class="inline-code">tombstoneTtl</code>: amount of time the task tombstone is retained after a task is deleted or executed. The tombstone is used in task de-duplication (from [v2beta3](https://cloud.google.com/tasks/docs/release-notes#January_14_2021))
 
 </Transform>
 

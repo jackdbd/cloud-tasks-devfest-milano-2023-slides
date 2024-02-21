@@ -13,7 +13,7 @@
     "preview:slides": "http-server ./dist --port 8080"
   },
   "dependencies": {
-    "@slidev/cli": "^0.44.0",
+    "@slidev/cli": "^0.48.0-beta.5",
     "@slidev/theme-default": "^0.21.2",
     "@slidev/theme-seriph": "^0.21.3"
   },
